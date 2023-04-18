@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Culinary_assistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHz-4s-FdK">
+                        <rect key="frame" x="0.0" y="0.0" width="212" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTl-gg-bQ1">
+                                <rect key="frame" x="5" y="5" width="202" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sTl-gg-bQ1" firstAttribute="leading" secondItem="BHz-4s-FdK" secondAttribute="leading" constant="5" id="FWZ-yp-n0s"/>
+                            <constraint firstAttribute="trailing" secondItem="sTl-gg-bQ1" secondAttribute="trailing" constant="5" id="Sjh-S9-onl"/>
+                            <constraint firstItem="sTl-gg-bQ1" firstAttribute="top" secondItem="BHz-4s-FdK" secondAttribute="top" constant="5" id="k9t-1i-kdh"/>
+                            <constraint firstAttribute="bottom" secondItem="sTl-gg-bQ1" secondAttribute="bottom" constant="5" id="rwq-sj-EfO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BHz-4s-FdK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3pj-cG-bgf"/>
+                <constraint firstItem="BHz-4s-FdK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DLE-PM-nXp"/>
+                <constraint firstAttribute="trailing" secondItem="BHz-4s-FdK" secondAttribute="trailing" id="vdR-eu-9ex"/>
+                <constraint firstAttribute="bottom" secondItem="BHz-4s-FdK" secondAttribute="bottom" id="wc9-Vj-hSU"/>
+            </constraints>
+            <size key="customSize" width="212" height="50"/>
+            <connections>
+                <outlet property="categoryName" destination="sTl-gg-bQ1" id="FmQ-F5-YAw"/>
+                <outlet property="myContentView" destination="BHz-4s-FdK" id="S40-x7-D1t"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
